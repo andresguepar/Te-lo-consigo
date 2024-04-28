@@ -1,6 +1,6 @@
 from abc import ABC
 
-from IMessage import IMessage
+from interfaces.IMessage import IMessage
 
 class MessageService:
     def __init__(self, message: IMessage):

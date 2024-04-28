@@ -1,9 +1,9 @@
 from typing import Self
-from AdminService import AdminService
-from MessageService import MessageService
-from SendMessage import SendMessage
-from ShowInScreen import ShowInScreen
-from User import User
+from services.AdminService import AdminService
+from services.MessageService import MessageService
+from services.SendMessage import SendMessage
+from services.ShowInScreen import ShowInScreen
+from model.User import User
 
 
 def main():

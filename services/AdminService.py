@@ -1,5 +1,5 @@
 from abc import ABC
-import User
+import model.User as User
 
 class AdminService (ABC):
     def __init__(self):

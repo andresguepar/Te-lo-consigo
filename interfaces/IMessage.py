@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from User import User
+from model.User import User
 
 class IMessage(ABC):
      
