@@ -1,0 +1,23 @@
+from abc import ABC
+import User
+
+class IAdmin (ABC):
+    
+    def __init__(self):
+
+        self.User = []
+
+    def Add(self, user: User):
+
+        self.user.append(user)
+
+    def Delete(self, id: int):
+        del self.user[id]
+
+    def Edit(self, id: int, new_user: User):
+        self.User[id] = new_user
+
+    def List(self):
+        for i, user in enumerate(self.User):
+            print(f"User {i}: {user.id}, {user.name}, {user.email}, {user.correo}")
+
