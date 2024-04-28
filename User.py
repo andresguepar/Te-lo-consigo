@@ -6,3 +6,4 @@ class User :
   self.name = name
   self.phone = phone
   self.type = type
+  #si
