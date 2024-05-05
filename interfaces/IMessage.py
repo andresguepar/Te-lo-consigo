@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from model.User import User
+from domain.entities.User import User
 
 class IMessage(ABC):
      

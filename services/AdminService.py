@@ -1,5 +1,7 @@
 from abc import ABC
-import model.User as User
+
+from domain.entities.User import User
+
 
 class AdminService (ABC):
     def __init__(self):

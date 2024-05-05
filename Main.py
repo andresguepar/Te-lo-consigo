@@ -1,9 +1,11 @@
 from typing import Self
+
+from domain.entities.User import User
 from services.AdminService import AdminService
-from services.MessageService import MessageService
-from services.SendMessage import SendMessage
-from services.ShowInScreen import ShowInScreen
-from model.User import User
+from services.message.MessageService import MessageService
+from services.message.SendMessage import SendMessage
+from services.message.ShowInScreen import ShowInScreen
+
 
 
 def main():
