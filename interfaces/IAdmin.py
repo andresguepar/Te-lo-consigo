@@ -1,8 +1,10 @@
 from abc import abstractmethod
 from abc import ABCMeta
 
-class AdminService (metaclass=ABCMeta):
 
+
+class IAdmin (metaclass=ABCMeta):
+    
     @abstractmethod
     def Add(self):
         pass
