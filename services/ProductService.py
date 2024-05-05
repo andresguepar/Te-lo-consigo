@@ -19,4 +19,4 @@ class ProductSevice:
 
     def List(self):
         for i, product in enumerate(self.product):
-            print(f"Product {i}| Name: {product.name}, {user.phone} {user.email}|")
+            print(f"Product {i}| Name: {product.name}, {product.phone} {product.email}|")
