@@ -1,8 +1,8 @@
-
+from abc import ABC
 from domain.entities.DetailProduct import DetailProduct
 
 
-class ProductSevice:
+class ProductSevice(ABC):
     def __init__(self):
 
         self.product = []
@@ -19,4 +19,4 @@ class ProductSevice:
 
     def List(self):
         for i, product in enumerate(self.product):
-            print(f"Product {i}| Name: {product.name}, {product.phone} {product.email}|")
+            print(f"Product {i}| Name: {product.name}, Description: {product.description} Price: {product.price} Category: {product.category}|")
