@@ -1,5 +1,5 @@
 from domain.entities.DetailProduct import DetailProduct
-from domain.entities.Product import Product
+w
 from services import ProductService
 from services.Data.APIDataService import APIDataService
 from services.Data.DataService import DataService
@@ -91,26 +91,12 @@ def main():
 
                 if category == '1':
                     loadApi.load_data()
-                    
-                    
-
-
-                    print("Product added.")
-
-
-                elif choice == '2':
+                elif category == '2':
                     loadInd.load_data()
-                    print("Product updated.")
-
-                elif choice == '3':
+                elif category == '3':
                     loadMass.load_data()
-                    print("Product deleted.")
-        
-                elif choice == '4':
-                    print("Products:")
-    
 
-        elif choice == '3':
+        elif choice == '4':
             print("Exiting...")
             break
         else:
