@@ -1,6 +1,7 @@
 from domain.entities.DetailProduct import DetailProduct
 
 
+from domain.entities.Product import Product
 from services.Data.APIDataService import APIDataService
 from services.Data.DataService import DataService
 from services.Data.IndividualDataService import IndividualDataService
@@ -47,9 +48,10 @@ def main():
                     price = input("Price: ")
                     category = input("Type of client (1. Smartphones - 2. Computers - 3. Electronic Accesory - 4. Decorative Accesory): ")
                     stock = input("Stock: ")
+                    product = Product(1,name,category)
 
-                    product = DetailProduct(name,description,price,category,stock)
-                    productService.Add(product)
+                    product2 = DetailProduct(1,name,product,description,price,category,stock)
+                    productService.Add(product2)
                     print("Product added.")
 
 
@@ -90,10 +92,10 @@ def main():
 
                 category = input("Select an option: ")
 
-                if category == '1':
+                if category == 'SP':
                     detailProduct = "Product uploaded"
                     loadApi.load_data(detailProduct)
-                elif category == '2':
+                elif category == '':
                     detailProduct = "Product uploaded"
                     loadInd.load_data(detailProduct)
                 elif category == '3':

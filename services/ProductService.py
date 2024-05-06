@@ -19,4 +19,4 @@ class ProductService(ABC):
 
     def List(self):
         for i, product in enumerate(self.product):
-            print(f"Product {i}| Name: {product.name}, Description: {product.description} Price: {product.price} Category: {product.category}|")
+            print(f"Product {i}| Name: {product.name}, Description: {product.description} Price: {product.price} Category: {product.category.name}|")
