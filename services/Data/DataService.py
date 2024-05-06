@@ -7,5 +7,5 @@ class DataService:
     def __init__(self, product: IDataManager):
         self.product = product
 
-    def load(self, detailProduct):
+    def load_data(self, detailProduct):
         self.product.load(detailProduct)
