@@ -1,10 +1,11 @@
 from domain.entities.DetailProduct import DetailProduct
-w
-from services import ProductService
+
+
 from services.Data.APIDataService import APIDataService
 from services.Data.DataService import DataService
 from services.Data.IndividualDataService import IndividualDataService
 from services.Data.MassiveDataService import MassiveDataService
+from services.ProductService import ProductService
 
 
 def main():
@@ -90,11 +91,14 @@ def main():
                 category = input("Select an option: ")
 
                 if category == '1':
-                    loadApi.load_data()
+                    detailProduct = "Product uploaded"
+                    loadApi.load_data(detailProduct)
                 elif category == '2':
-                    loadInd.load_data()
+                    detailProduct = "Product uploaded"
+                    loadInd.load_data(detailProduct)
                 elif category == '3':
-                    loadMass.load_data()
+                    detailProduct = "Product uploaded"
+                    loadMass.load_data(detailProduct)
 
         elif choice == '4':
             print("Exiting...")

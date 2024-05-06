@@ -2,7 +2,7 @@ from abc import ABC
 from domain.entities.DetailProduct import DetailProduct
 
 
-class ProductSevice(ABC):
+class ProductService(ABC):
     def __init__(self):
 
         self.product = []

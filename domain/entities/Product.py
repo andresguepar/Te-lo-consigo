@@ -1,4 +1,4 @@
-from enums.Category import Category
+from domain.enums.Category import Category
 
 
 class Product:
